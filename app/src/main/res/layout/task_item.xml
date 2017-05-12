@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <FrameLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_gravity="end">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/delete"
+            android:background="@android:color/holo_red_dark"
+            android:text="DELETE"
+            android:textColor="@android:color/background_light"
+            android:layout_alignParentEnd="true"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rl_fg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvName"
+            android:gravity="center_vertical"
+            android:background="@android:color/background_light"
+            android:paddingStart="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
